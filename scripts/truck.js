@@ -9,13 +9,13 @@
 
   Truck.prototype.createOrder = function(order) {
     /* eslint-disable no-console */
-    console.log("Adding order for" + order.emailAddress);
+    console.log("Adding order for " + order.emailAddress);
     /* eslint-disable no-console */
     this.db.add(order.emailAddress, order);
   };
 
   Truck.prototype.deliverOrder = function(customerId) { //customerId = emailAddr
-    console.log("Delivering order for" + customerId);
+    console.log("Delivering order for " + customerId);
     this.db.remove(customerId);
   };
 
