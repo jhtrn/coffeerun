@@ -28,7 +28,7 @@
     // Create a new instance of a row, using the coffee order info
     var rowElement = new Row(coffeeOrder);
 
-    // Add the new row instance"s $element property to the checklist
+    // Add the new row instance's $element property to the checklist
     this.$element.append(rowElement.$element);
   };
 
